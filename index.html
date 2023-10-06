@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
     <header>
         <nav class="nav">
@@ -33,46 +32,55 @@
                 <button class="buttonlog"><a class="aaa" href="#">LOG IN</a></button>
                 <button class="buttonsign"><a class="aaa" href="#">SIGN UP</a></button>
             </div>
+
             <div class="menue2">
                 <div class="menue2_1">
-                    <select class="buttonen2" >
+                    <select class="buttonen2">
                         <option></option>
                         <option class="buttonen3">EN </option>
                         <option class="buttonen3">RU </option>
                     </select>
-                  
-                    <select class="imglog" name="menue">
-                        <ul>
-                        <option class="aa">Menu</option>
-                        <option class="aaa2">  <li><a class="aaa1" href="#">About us</a></li></option>
-                        <option class="aaa2">  <li><a class="aaa1" href="#">Brands</a></li></option>
-                        <option class="aaa2">  <li><a class="aaa1" href="#">Commissions</a></li></option>
-                        <option class="aaa2">  <li><a class="aaa1" href="#">News</a></li></option>
-                        <option class="aaa2">  <li><a class="aaa1" href="#">Contact us</a></li></option>
-                        <option class="aaa2">  <li><a class="aaa1" href="#">Careers</a></li></option>
-                        <option class="aaaaa1"> <button><a class="aaa" href="#">LOG IN</a></button></option>
-                        <option class="aaaa1">  <button><a class="aaa" href="#">SIGN UP</a></button></option>
-                        </ul>
-                    </select>
-                   
+                </div>
+                <div class="imglog">
+                    <img class="imglog1"
+                        src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png">
                 </div>
             </div>
-        
-    </nav>
-</header>
+        </nav>
+        <div class="menu2_2">
+            <div class="close">
+                <img class="closeimg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cross_icon_%28white%29.svg/2048px-Cross_icon_%28white%29.svg.png">
+            </div>
+            <ul>
+                <div class="aaa2">
+                    <li><a class="aaa1" href="#">About us</a></li>
+                </div>
+                <div class="aaa2">
+                    <li><a class="aaa1" href="#">Brands</a></li>
+                </div>
+                <div class="aaa2">
+                    <li><a class="aaa1" href="#">Commissions</a></li>
+                </div>
+                <div class="aaa2">
+                    <li><a class="aaa1" href="#">News</a></li>
+                </div>
+                <div class="aaa2">
+                    <li><a class="aaa1" href="#">Contact us</a></li>
+                </div>
+                <div class="aaa2">
+                    <li><a class="aaa1" href="#">Careers</a></li>
+                </div>
+                <button class="aaaaa1">
+                    <a class="aaa" href="#">
+                        LOG IN
+                    </a>
+                </button>
+                <button class="aaaa1"><a class="aaa" href="#">SIGN UP</a></button>
+            </ul>
+        </div>
+    </header>
     <main>
-        <!-- <div id="dropdown1" >
-            <ul class="dropdown2">
-            <li class="aaa2"><a class="aaa1" href="#">About us</a></li>
-            <li class="aaa2"><a class="aaa1" href="#">Brands</a></li>
-            <li class="aaa2"><a class="aaa1" href="#">Commissions</a></li>
-            <li class="aaa2"><a class="aaa1" href="#">News</a></li>
-            <li class="aaa2"><a class="aaa1" href="#">Contact us</a></li>
-            <li class="aaa2"><a class="aaa1" href="#">Careers</a></li>
-            <button class="aaaaa1"><a class="aaa" href="#">LOG IN</a></button>
-            <button class="aaaa1"><a class="aaa" href="#">SIGN UP</a></button>
-        </ul>
-        </div> -->
         <div class="main">
             <div class="main1">
                 <h1 class="mainh2">HOUSE OF <br>
@@ -89,7 +97,7 @@
                     <img src="C:\Users\tumas\OneDrive\Рабочий стол\Figma\img\Banner BG.png" alt=" ">
                 </div>
                 <div class="main2_1_1">
-                    <img src="C:\Users\tumas\OneDrive\Рабочий стол\Figma\img\Banner.png" alt=" ">
+                    <img class="imgbanner" src="C:\Users\tumas\OneDrive\Рабочий стол\Figma\img\Banner.png" alt=" ">
                 </div>
             </div>
             <div class="main3">
@@ -210,5 +218,13 @@
     </footer>
 
 </body>
+<script>
+    document.querySelector(".imglog").addEventListener("click", function () {
+        document.querySelector(".menu2_2").classList.add("active");
+    });
+    document.querySelector(".menu2_2 .close").addEventListener("click", function () {
+        document.querySelector(".menu2_2").classList.remove("active");
+    });
+</script>
 
 </html>

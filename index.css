@@ -53,6 +53,10 @@ header {
 
 }
 
+.menu2_2 {
+    display: none;
+}
+
 .buttonsign {
     width: 97px;
     height: 48px;
@@ -594,7 +598,7 @@ a {
 
 @media screen and (max-width: 500px) {
     .div {
-        width: 54px;
+        width: 2px;
         height: 18px;
     }
 
@@ -621,8 +625,6 @@ a {
 
     .main {
         display: block;
-        width: 100%;
-
     }
 
     .main1 {
@@ -673,19 +675,26 @@ a {
 
     .main2_1_1 {
         display: block;
+        width: 200px;
 
     }
 
-    img {
-        max-width: 500px;
+    main {
+        width: 300px;
+    }
+
+
+    .imgbanner {
+        max-width: 300px;
         max-height: 220px;
     }
 
     .main3 {
         width: 300px;
         height: 479px;
-        margin-top: -50px;
+        margin: 0px;
         margin-left: 10px;
+
     }
 
     .main3_2_1 {
@@ -696,6 +705,14 @@ a {
         border-radius: 40px;
         margin-left: 50px;
 
+    }
+
+    main {
+        width: 300px;
+    }
+
+    footer {
+        width: 300px;
     }
 
     .main3_2_2 {
@@ -753,9 +770,10 @@ a {
     .ulmenue {
         display: block;
         color: white;
-        width: 588px;
+        width: 300px;
         height: 36px;
         padding: 8px;
+        margin: 0px;
 
     }
 
@@ -811,10 +829,29 @@ a {
         display: none;
     }
 
+    .button {
+        display: none;
+    }
+
     .menue2 {
-        display: block;
+        display: flex;
         margin-top: 8px;
-        margin-left: 100px;
+    }
+
+    .menu2_2 {
+        display: none;
+        margin-top: 50px;
+        position: fixed;
+        width: 300px;
+        height: 500px;
+        background-color: #110A1D;
+        margin-right: 200px;
+        justify-content: center;
+
+    }
+
+    .menu2_2.active {
+        display: block;
     }
 
     .buttonen2 {
@@ -827,24 +864,33 @@ a {
         color: white;
     }
 
+    .close {
+        width: 35px;
+        height: 35px;
+        padding-left: 250px;
+        margin-top: -30px;
+    }
+
+    .closeimg {
+        width: 35px;
+        height: 35px;
+    }
+
     .buttonen3 {
         width: 100px;
         height: 50px;
         padding: 0px;
     }
 
-    .menue2_1 {
-        display: flex;
-    }
-
     .imglog {
-        width: 35px;
+        width: 40px;
         height: 40px;
         margin-left: 5px;
-        background-color: #110A1D;
-        border: 2px solid #9DADF2;
-        color: white;
+    }
 
+    .imglog1 {
+        width: 40px;
+        height: 40px;
     }
 
     .aaa2 {
@@ -856,7 +902,8 @@ a {
         color: white;
         text-decoration: none;
         text-align: start;
-        padding: 10px;
+        margin: 5px;
+
     }
 
     .aaa1 {
@@ -871,12 +918,12 @@ a {
         width: 300px;
         height: 50px;
         border-radius: 28px;
-        border: 2px solid #478BF9;
+        border: 2px solid #9DADF2;
         background-color: #478BF9;
         color: white;
         text-decoration: none;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 5px;
 
     }
 
@@ -884,12 +931,18 @@ a {
         width: 300px;
         height: 50px;
         border-radius: 28px;
-        border: 2px solid #478BF9;
+        border: 2px solid #9DADF2;
         background-color: #1E1231;
         color: white;
         text-decoration: none;
         margin-top: 20px;
-        margin-left: 10px;
+        margin-left: 5px;
 
     }
+
+    .aaa {
+        text-decoration: none;
+        color: white;
+    }
+
 }
